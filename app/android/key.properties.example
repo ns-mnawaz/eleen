@@ -1,0 +1,15 @@
+# Copy this file to app/android/key.properties and fill in real values.
+# key.properties is gitignored — never commit it or the keystore itself.
+#
+# Generate the upload keystore (keep the .jks OUTSIDE the repo, or in a
+# gitignored path, and back it up safely — losing it means you cannot
+# update the app on Google Play):
+#
+#   keytool -genkeypair -v -keystore eleen-upload.jks -alias upload \
+#     -keyalg RSA -keysize 2048 -validity 10000
+#
+# storeFile may be an absolute path or one relative to app/android/.
+storeFile=/absolute/path/to/eleen-upload.jks
+storePassword=CHANGE_ME
+keyAlias=upload
+keyPassword=CHANGE_ME
